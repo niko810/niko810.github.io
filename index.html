@@ -32,10 +32,6 @@
     
     <section class="overlap">
     </section>
-    
-    <a href="#main-content" class="scroll-down" address="true">
-        <p>Explore</p>
-    </a>
 
     <div class="container" id="main-content">
         <div class="row">
@@ -96,14 +92,7 @@
                 $navbar.collapse('hide');
             }
         });
-        $(function() {
-            $('.scroll-down').click(function() {
-                $('html, body').animate({
-                    scrollTop: $('section.ok').offset().top
-                }, 'slow');
-                return false;
-            });
-        }); /* Pre Loader */
+	/* Pre Loader */
         $(function() {
             $(".vertical-centered-box").fadeOut(1500, function() {
             });
