@@ -88,7 +88,10 @@
 </div>
     
     <script type="text/javascript" charset="utf-8">
-        $(document).click(function(event) {
+        $("#main-content").click(function(){
+	    $("footer").slideDown();
+	}); 
+	$(document).click(function(event) {
             var clickover = $(event.target);
             var $navbar = $(".navbar-collapse");
             var _opened = $navbar.hasClass("in");
