@@ -724,6 +724,7 @@ input {
 }
 
 #footer_text {
+    text-align: center;
     margin-top: 25px;
     font-family: IBM Plex Sans;
     font-size: 11px;
