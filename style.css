@@ -13,6 +13,10 @@ body {
     background-size: cover;
 }
 
+.row{
+    margin-top: 30px;
+}
+
 .overlap {
     background-color: #ffffffc1;
     position: relative;
@@ -448,6 +452,10 @@ body {
     font-size: 14px;
 }
 
+
+
+
+
 #landing-text {
     position: absolute;
     display: table;
@@ -581,7 +589,7 @@ body {
 }
 
 #preloader {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 #preloader h1 {
@@ -709,6 +717,7 @@ input {
 }
 
 #footer {
+    text-align: center;
     background: white;
     padding: 5px;
     margin-top: 70px;
@@ -741,9 +750,22 @@ input {
     color: #9c9c9c;
 }
 
+@media screen and (max-width: 1200px){
+    #preloader{
+        margin-top: 60px;
+    }
+}
+
 @media screen and (max-width: 934px) {
     #preloader p {
         font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 840px){
+    #preloader{
+        margin-top: 30px;
     }
 }
 
@@ -903,6 +925,17 @@ input {
     }
 }
 
+@media screen and (max-width: 420px){
+    .widget__content{
+        margin: 25px;
+    }
+    input{
+        font-size: 12px;
+    }
+    .widget{
+        margin: 30px;
+    }
+}
 
 /* Pre Loader */
 
