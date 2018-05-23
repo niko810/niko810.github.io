@@ -716,15 +716,17 @@ input {
     transition: 0.4s ease-in-out;
 }
 
+.footer__copyright{
+    text-align: center;    
+}
+
 #footer {
-    text-align: center;
     background: white;
     padding: 5px;
     margin-top: 70px;
 }
 
 #footer_text {
-    text-align: center;
     margin-top: 25px;
     font-family: IBM Plex Sans;
     font-size: 11px;
