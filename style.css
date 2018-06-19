@@ -6,10 +6,9 @@ body {
 }
 
 .background {
-    position: absolute;
     height: 100%;
     width: 100%;
-    background: url("https://gdurl.com/NSum") no-repeat center fixed;
+    background: url("https://gdurl.com/NSum") no-repeat center;
     background-size: cover;
 }
 
@@ -460,8 +459,7 @@ body {
     position: absolute;
     display: table;
     height: 100%;
-    width: 100%;
-    z-index: 9;
+    z-index: 1;
 }
 
 #landing-text h1 {
@@ -575,6 +573,7 @@ body {
 }
 
 .container {
+    position: relative;
     padding: 25px;
     padding-bottom: 0;
     width: auto;
