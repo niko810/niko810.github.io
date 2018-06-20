@@ -451,14 +451,11 @@ body {
     font-size: 14px;
 }
 
-
-
-
-
 #landing-text {
     position: absolute;
     display: table;
     height: 100%;
+    width: 100%;
     z-index: 1;
 }
 
