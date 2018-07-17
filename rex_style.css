@@ -68,6 +68,10 @@ body {
     font-weight: 100;
 }
 
+.o-navigation-inline a {
+    color: #000000!important;
+}
+
 .rx-container {
     height: 100%;
     width: 100%;
