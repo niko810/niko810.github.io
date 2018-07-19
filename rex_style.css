@@ -59,6 +59,10 @@ body {
     padding: 15px;
 }
 
+.o-navigation-inline__item {
+    display: block!important;
+}
+
 .o-navigation-inline {
     margin: 0;
     padding: 0;
@@ -1463,4 +1467,13 @@ body {
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
     transition: all 0.7s;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .hero {
+        height: 100%;
+        margin-left: 40px;
+    }
+
 }
