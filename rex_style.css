@@ -93,7 +93,7 @@ body {
     border: 8px solid #ffffff;
     box-shadow: 0px 10px 35px 0px #7d7d7d;
     border-radius: 3px;
-    / background-position: center;
+    background-position: center;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72a0229d410f0e7c7701ebfc53b68a65&auto=format&fit=crop&w=750&q=80);
     transition-duration: 0.5s;
@@ -109,9 +109,9 @@ body {
 /* Image Container Overlay */
 
 #img_1 .rx_overlay {
-    width: 80%;
-    height: 80%;
-    margin-top: 28px;
+    width: 375px;
+    height: 225px;
+    margin: 30px;
     transform: rotateY(90deg);
     display: inline-table;
     transition-duration: 0.7s;
@@ -127,27 +127,27 @@ body {
 }
 
 #img_1 .rx-contain {
+    opacity: 0;
+    z-index: 999;
     display: table-cell;
     vertical-align: middle;
-    opacity: 0;
     font-family: Prata;
-    letter-spacing: 1.5px;
     transition-duration: 0.6s;
     color: black;
 }
 
 #img_1 .rx-contain h2 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 10px;
+    font-size: 28px;
 }
 
 #img_1 .rx-contain p {
-    font-size: 15px;
-    padding: 35px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    letter-spacing: 3px;
+    font-size: 18px;
+    margin: 20px;
+    letter-spacing: 1.5px;
     font-family: Abel;
+    font-weight: 800;
+    color: black;
 }
 
 #img_1:hover .rx-contain {
@@ -158,7 +158,6 @@ body {
 /* Arrow */
 
 #img_1 .fas {
-    margin-bottom: -5px;
     font-size: 20px;
     transition-duration: 0.7s;
 }
@@ -179,6 +178,7 @@ body {
 /* Image Container */
 
 #img_2 {
+    position: relative;
     height: 430px;
     width: 450px;
     padding: 0;
@@ -201,7 +201,6 @@ body {
 #img_2 .rx-overlay {
     width: 100%;
     height: 100%;
-    display: table;
     transition-duration: 0.7s;
 }
 
@@ -213,13 +212,13 @@ body {
 /* Text Contain */
 
 #img_2 .rx-contain {
-    display: table-cell;
-    vertical-align: middle;
+    z-index: 999;
+    position: relative;
     opacity: 0;
-    font-family: inherit;
     letter-spacing: 2.5px;
-    transition-duration: 0.6s;
     color: white;
+    transition-duration: 0.6s;
+    transform: translateY(165px);
 }
 
 #img_2:hover .rx-contain {
@@ -230,8 +229,6 @@ body {
     opacity: 0.8;
     font-size: 45px;
     transition-duration: 0.3s;
-    padding: 10px;
-    margin-top: 5px;
 }
 
 #img_2 .fas:hover {
@@ -249,8 +246,7 @@ body {
     z-index: 0;
     border: none;
     padding: 8px;
-    transition-delay: 0.5s;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 #img_2:hover .rx-share {
@@ -311,10 +307,12 @@ body {
 }
 
 #img_3 .rx-contain {
+    z-index: 999;
     display: inline-grid;
     opacity: 0;
-    margin-top: 45px;
-    margin-left: -165px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 30px;
     font-family: inherit;
     letter-spacing: 2.5px;
     transition-duration: 0.6s;
@@ -341,7 +339,7 @@ body {
     border-top: 3px solid #eee;
     float: left;
     width: 30px;
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 #img_3:hover .rx-contain hr {
@@ -350,7 +348,7 @@ body {
 
 #img_3 .rx-contain p {
     float: left;
-    margin-top: 35px;
+    margin-top: 28px;
     padding: 10px;
     font-size: 12px;
     background: white;
@@ -372,7 +370,7 @@ body {
 
 #img_3 .fas {
     font-size: 25px;
-    margin-top: 155px;
+    margin-top: 150px;
     margin-left: 5px;
     color: #efefef;
     transition-duration: 0.5s;
@@ -436,10 +434,12 @@ body {
 /* Text Contain */
 
 #img_4 .rx-contain {
+    z-index: 999;
     display: inline-grid;
     opacity: 0;
-    margin-top: 45px;
-    margin-left: -150px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 30px;
     font-family: inherit;
     letter-spacing: 2.5px;
     transition-duration: 0.6s;
@@ -466,7 +466,7 @@ body {
     position: absolute;
     border-top: 3px solid #eee;
     float: left;
-    margin-top: 65px;
+    margin-top: 60px;
     width: 30px;
 }
 
@@ -476,7 +476,7 @@ body {
 
 #img_4 .rx-contain p {
     float: left;
-    margin-top: 35px;
+    margin-top: 28px;
     padding: 10px;
     font-size: 12px;
     background: white;
@@ -498,7 +498,7 @@ body {
 
 #img_4 .fas {
     font-size: 25px;
-    margin-top: 155px;
+    margin-top: 150px;
     margin-left: 5px;
     color: #efefef;
 }
@@ -562,7 +562,7 @@ body {
     border: 8px solid #ffffff;
     box-shadow: 0px 10px 35px 0px #7d7d7d;
     border-radius: 3px;
-    / background-position: center;
+    background-position: center;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1469053913977-1d2f009670d9?ixlib=rb-0.3.5&s=07c241405de8565010e0e958e212469e&auto=format&fit=crop&w=755&q=80);
     transition-duration: 0.5s;
@@ -595,6 +595,7 @@ body {
 /* Text Contain */
 
 #img_5 .rx-contain {
+    z-index: 999;
     opacity: 0;
     display: table-cell;
     vertical-align: middle;
@@ -643,18 +644,19 @@ body {
 /* Text Contain */
 
 #img_6 .rx-contain {
+    z-index: 999;
     position: relative;
     margin-top: 365px;
     opacity: 0;
     font-family: IBM Plex Sans;
     letter-spacing: 1.5px;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     color: #3a3a3a;
 }
 
 #img_6:hover .rx-contain {
-    transition-delay: 0.2s;
-    margin-top: 373px;
+    transition-delay: 0.1s;
+    margin-top: 375px;
     opacity: 1;
 }
 
@@ -694,13 +696,14 @@ body {
 }
 
 #img_7:hover .rx-overlay {
-    background: #ffffff1a;
+    background: #ffffff0a;
 }
 
 
 /* Text Contain */
 
 #img_7 .rx-contain {
+    z-index: 999;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -711,8 +714,9 @@ body {
 
 #img_7 .rx-contain h3 {
     font-family: Abel;
-    font-size: 16px;
+    font-size: 17px;
     float: left;
+    font-weight: 800;
     margin: 20px;
     color: #1b1b1b;
     transition-duration: 0.7s;
@@ -722,9 +726,7 @@ body {
     font-size: 20px;
     color: #4a4a4a;
     float: right;
-    margin: 25px;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin: 20px;
     cursor: pointer;
     transition-delay: 0.3s;
     transition-duration: 0.6s;
@@ -737,7 +739,7 @@ body {
 #img_7 .rx-drop {
     width: 100%;
     height: 20%;
-    background: #ffffff5e;
+    background: #ffffff;
     transition-duration: 1s;
 }
 
@@ -814,11 +816,11 @@ body {
 
 #img_8 .fab {
     font-size: 20px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 3px;
     color: #4a4a4a;
     transition-duration: 0.6s;
-    background: #ffffffb8;
+    background: #ffffff;
 }
 
 #img_8:hover #link_1 {
@@ -903,6 +905,7 @@ body {
 /* Card */
 
 #img_9 .rx-card {
+    z-index: 999;
     text-align: center;
     position: relative;
     width: 95%;
@@ -933,21 +936,22 @@ body {
 #img_9 .rx-face.front h2 {
     font-family: Prata;
     padding: 0px;
-    margin-top: 40px;
+    margin: 50px;
+    margin-bottom: 15px;
 }
 
 #img_9 .rx-face.front hr {
     width: 100px;
-    margin-top: 18px;
+    margin: auto;
 }
 
 #img_9 .rx-face.front p {
     font-family: Abel;
-    font-size: 18px;
-    margin: 18px;
-    padding-left: 40px;
-    padding-right: 40px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 35px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
 }
 
 #img_9 .rx-card:hover .front {
@@ -1057,6 +1061,7 @@ body {
 /* Text Contain */
 
 #img_10 .rx-contain {
+    z-index: 999;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -1080,6 +1085,7 @@ body {
     padding-bottom: 0;
     padding-top: 0;
     letter-spacing: 3px;
+    font-weight: 900;
     font-family: Abel;
 }
 
@@ -1173,9 +1179,10 @@ body {
 /* Text Contain */
 
 #img_11 .rx-txt {
+    z-index: 999;
     display: inline-block;
     position: absolute;
-    margin: 0;
+    margin: 0;  
     margin-top: 25px;
     text-align: left;
     transform: translateX(-75px);
@@ -1184,8 +1191,8 @@ body {
 }
 
 #img_11 .rx-txt h3 {
-    margin-top: 25px;
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 30px;
     font-family: Abril Fatface;
 }
 
@@ -1199,12 +1206,12 @@ body {
 }
 
 #img_11 .rx-txt p {
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
     margin: 20px;
-    margin-top: 18px;
     margin-left: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    font-weight: 800;
     font-family: Dosis;
 }
 
@@ -1214,7 +1221,10 @@ body {
 
 #img_11 .fas {
     cursor: pointer;
+    margin-top: 10px;
     color: #5a5a5a;
+    font-size: 15px;
+    transition-duration: 0.5s;
 }
 
 #img_11 .fas:hover {
@@ -1294,14 +1304,14 @@ body {
 }
 
 #img_12 .rx-txt h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 30px;
     font-family: Abril Fatface;
 }
 
 #img_12 .rx-txt hr {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 18px;
     cursor: pointer;
     width: 30px;
     border-top: 3px solid #000000;
@@ -1309,11 +1319,11 @@ body {
 }
 
 #img_12 .rx-txt p {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
-    margin: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 65px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-family: Dosis;
 }
 
